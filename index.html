@@ -9,6 +9,7 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Persian Font (Vazirmatn) -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
     <!-- External CSS -->
     <link rel="stylesheet" href="styles.css">
@@ -46,7 +47,7 @@
         }
     </script>
 </head>
-<body class="font-vazir bg-slate-50 text-slate-800">
+<body class="font-vazir bg-slate-50 text-slate-800 overflow-x-hidden">
 <!-- Preloader -->
 <div id="preloader" class="fixed inset-0 bg-white z-50 flex items-center justify-center">
     <div class="loader"></div>
@@ -59,7 +60,7 @@
             <div class="logo-container mr-3">
                 <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-bold text-xl">K</div>
             </div>
-            <div class="text-2xl font-bold mr-2">
+            <div class="text-2xl font-bold">
                 <span class="text-gradient">کیانوش</span>
                 <span class="text-dark">صفرزاده</span>
             </div>
@@ -171,7 +172,7 @@
     </div>
 
     <!-- Scroll Down Indicator -->
-    <div class="absolute bottom-16 left-1/2 transform -translate-x-1/2 flex flex-col items-center">
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center">
         <span class="text-sm text-slate-500 mb-2">اسکرول کنید</span>
         <div class="scroll-down-indicator">
             <div class="chevron"></div>
@@ -660,7 +661,7 @@
                         <span class="bg-primary/10 text-primary px-4 py-1 rounded-full text-sm mt-2 sm:mt-0">تمام وقت</span>
                     </div>
                     <h4 class="text-lg text-primary mb-4 flex items-center">
-                        <i class="fas fa-building mr-3"></i>
+                        <i class="fas fa-building ml-5 mr-5"></i>
                         شرکت فناوری نوین - ۱۴۰۰ تا کنون
                     </h4>
                     <p class="text-slate-600">
@@ -678,7 +679,7 @@
                         <span class="bg-primary/10 text-primary px-4 py-1 rounded-full text-sm mt-2 sm:mt-0">تمام وقت</span>
                     </div>
                     <h4 class="text-lg text-primary mb-4 flex items-center">
-                        <i class="fas fa-laptop-code mr-3"></i>
+                        <i class="fas fa-laptop-code ml-5 mr-5"></i>
                         استودیو طراحی وب آینده - ۱۳۹۸ تا ۱۴۰۰
                     </h4>
                     <p class="text-slate-600">
@@ -696,11 +697,11 @@
                         <span class="bg-primary/10 text-primary px-4 py-1 rounded-full text-sm mt-2 sm:mt-0">پاره وقت</span>
                     </div>
                     <h4 class="text-lg text-primary mb-4 flex items-center">
-                        <i class="fas fa-code mr-3"></i>
+                        <i class="fas fa-code ml-5 mr-5"></i>
                         شرکت داده‌پردازان - ۱۳۹۷ تا ۱۳۹۸
                     </h4>
                     <p class="text-slate-600">
-                        یادگیری اصول توسعه وب، مشارکت در پر��ژه‌های کوچک، آشنایی با فرآیندهای توسعه نرم‌افزار. همکاری با تیم‌های مختلف و کسب تجربه در زمینه‌های مختلف توسعه وب.
+                        یادگیری اصول توسعه وب، مشارکت در پروژه‌های کوچک، آشنایی با فرآیندهای توسعه نرم‌افزار. همکاری با تیم‌های مختلف و کسب تجربه در زمینه‌های مختلف توسعه وب.
                     </p>
                 </div>
             </div>
@@ -717,8 +718,8 @@
                         <h3 class="text-xl font-bold text-slate-800">کارشناسی مهندسی کامپیوتر</h3>
                         <span class="bg-secondary/10 text-secondary px-4 py-1 rounded-full text-sm mt-2 sm:mt-0">۱۳۹۹ - ۱۴۰۲</span>
                     </div>
-                    <h4 class="text-lg text-primary mb-4 flex items-center">
-                        <i class="fas fa-university mr-3"></i>
+                    <h4 class="text-lg text-primary mb-2 flex items-center">
+                        <i class="fas fa-university ml-5 mr-5"></i>
                         دانشگاه صنعتی ارومیه
                     </h4>
                     <p class="text-slate-600">
@@ -868,7 +869,7 @@
                                 <div class="contact-icon-modern">
                                     <i class="fas fa-phone-alt"></i>
                                 </div>
-                                <div class="mr-4">
+                                <div class="mr-6">
                                     <h4 class="text-lg font-semibold mb-2">شماره تماس</h4>
                                     <p class="text-white/80">۰۹۳۵۷۵۵۱۳۸۰</p>
                                 </div>
@@ -878,7 +879,7 @@
                                 <div class="contact-icon-modern">
                                     <i class="fas fa-envelope"></i>
                                 </div>
-                                <div class="mr-4">
+                                <div class="mr-6">
                                     <h4 class="text-lg font-semibold mb-2">ایمیل</h4>
                                     <p class="text-white/80">Kianush.sr@gmail.com</p>
                                 </div>
@@ -888,7 +889,7 @@
                                 <div class="contact-icon-modern">
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>
-                                <div class="mr-4">
+                                <div class="mr-6">
                                     <h4 class="text-lg font-semibold mb-2">آدرس</h4>
                                     <p class="text-white/80">تبریز، خیابان زعفرانیه</p>
                                 </div>
@@ -968,8 +969,9 @@
                             <label for="profile-image" class="block text-slate-700 mb-4 font-medium">عکس پروفایل</label>
                             <div class="relative flex items-center">
                                 <input type="file" id="profile-image" class="hidden" accept="image/*">
-                                <div id="preview-container" class="w-20 h-20 rounded-full bg-slate-100 flex items-center justify-center overflow-hidden border-2 border-dashed border-primary/50 ml-4">
-                                    <i id="upload-icon" class="fas fa-camera text-primary text-xl"></i>
+                                <!-- تغییر در بخش عکس پروفایل - مرکز قرار دادن آیکون -->
+                                <div id="preview-container" class="w-20 h-20 rounded-full bg-slate-100 flex items-center justify-center overflow-hidden border-2 border-dashed border-primary/50 ml-4 relative">
+                                    <i id="upload-icon" class="fas fa-camera text-primary text-xl absolute"></i>
                                     <img id="image-preview" class="w-full h-full object-cover hidden">
                                 </div>
                                 <label for="profile-image" class="btn-secondary cursor-pointer text-center">
@@ -978,9 +980,10 @@
                                 </label>
                             </div>
                         </div>
+                        <!-- تغییر در بخش ارسال پیام - اضافه کردن فاصله بین آیکون و متن -->
                         <button type="submit" class="btn-primary w-full">
                             <span>ارسال پیام</span>
-                            <i class="fas fa-paper-plane ml-2"></i>
+                            <i class="fas fa-paper-plane ml-3"></i>
                         </button>
                     </form>
                 </div>
@@ -1010,7 +1013,7 @@
             <div class="md:col-span-1">
                 <div class="flex items-center mb-6">
                     <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-bold text-xl mr-3">K</div>
-                    <div class="text-2xl font-bold mr-2">
+                    <div class="text-2xl font-bold">
                         <span class="text-gradient">کیانوش</span>
                         <span class="text-white">صفرزاده</span>
                     </div>
