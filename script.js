@@ -87,7 +87,15 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     }
 
-    // Animate skill bars on scroll
+    // تنظیم عرض اولیه نوارهای پیشرفت
+    const skillLevels = document.querySelectorAll(".skill-level")
+    skillLevels.forEach((level) => {
+        const width = level.style.width
+        level.setAttribute("data-width", width)
+        level.style.width = "0"
+    })
+
+    // انیمیشن نوارهای پیشرفت با اسکرول
     const skillBars = document.querySelectorAll(".skill-level")
 
     // Function to check if an element is in viewport
@@ -105,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function animateSkillBars() {
         skillBars.forEach((bar) => {
             if (isInViewport(bar)) {
-                const width = bar.getAttribute("style").split("width:")[1].trim()
+                const width = bar.getAttribute("data-width")
                 bar.style.width = "0"
                 setTimeout(() => {
                     bar.style.width = width
@@ -115,7 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Initial check and add scroll event listener
-    animateSkillBars()
+    setTimeout(animateSkillBars, 500)
     window.addEventListener("scroll", animateSkillBars)
 
     // Active navigation link based on scroll position
